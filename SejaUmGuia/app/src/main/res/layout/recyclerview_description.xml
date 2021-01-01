@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.view.fragment.ui.DescriptionFragment">
+
+    <ImageView
+        android:id="@+id/logoDescription"
+        style="@style/constraintLayoutParentTopLeftRight"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/chucknorris_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/descriptionImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:maxLines="10"
+        android:elevation="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_degrade_categories"
+        android:text="Testando o espaco"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoDescription" />
+
+
+
+    <TextView
+        android:id="@+id/createdDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created, show in "
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:lines="1"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionImage" />
+
+
+    <TextView
+        android:id="@+id/textViewredirectToLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Redirect to Joke link"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createdDescription" />
+
+    <TextView
+        android:id="@+id/linkToRedirectJoke"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:autoSizeTextType="uniform"
+        android:maxLines="3"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="https://api.comando.io/categories"
+        android:textColor="#11ADEC"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintRight_toLeftOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewredirectToLink" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_baseline_link_24"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewredirectToLink" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
