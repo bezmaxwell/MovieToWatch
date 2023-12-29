@@ -1,10 +1,10 @@
-# guiabolsoFirst
-App test .Developed by Maxwell
+# Movie&Watch
 
-App developed in 2021.
-Developed by Maxwell.
-
-Include:Design pattern MVVM,RxJava,DI-Dagger 2
+Technologies used:
+   -Design pattern
+   -MVVM,
+   -RxJava
+   -DI-Dagger 2
 
 I take a little long time developing this app,therefore I learn many things about RxJava,MVVM and Dagger 2 .
 I didnt realize test interfaces and unit's because time I lose.
@@ -18,3 +18,4 @@ Adding Search,filter.
 Fixing graph dependencies with dagger 2 
    
 
+App developed in 2021. Developed by Maxwell.
